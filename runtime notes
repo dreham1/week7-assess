@@ -1,0 +1,9 @@
+extra large array append was quicker with a time of append 6.110515 ms
+
+tinyArray insert was faster with a time of insert 56.935 μs
+smallArray insert 72.603 μs
+mediumArray append 218.541 μs
+largeArray  insert 10.80542 ms
+
+I believe insert is faster because you tell it to add more 0's all at once and it can 
+allocate a single time while append is a bit slower because it has to allocate 0's then copy them.
