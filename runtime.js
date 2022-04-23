@@ -44,6 +44,17 @@ const extraLargeArray = getSizedArray(100000);
 
 // How long does it take to double every number in a given 
 // array? 
+// tinyArray - insert 115.3 μs ---- append 143.9 μs
+// smallArray - insert 80.3 μs --- append 159.7 μs
+// mediumArray - insert 270.1 μs ---- append 221.7 μs
+// largeArray - insert 10.9862 ms ----- append 727 μs
+// extraLargeArray - insert 1.3353812999999999 s ---- append 4.4982 ms
+
+// unshift scales faster in the function
+// unshift scales faster in the function
+// push scales faster in the function
+// push scales faster in the function
+// push scales faster in the function
 
 // Try it with first function
 perf.start();                     // Starts timer
